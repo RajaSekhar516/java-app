@@ -3,7 +3,8 @@ kind: Deployment
 metadata:
   name: spring-boot-app
 spec:
-  replicas: 3
+  minReplicas: 5
+  maxReplicas: 10
   selector:
     matchLabels:
       app: spring-boot-app
